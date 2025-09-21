@@ -26,6 +26,7 @@ jobs:
 
       - name: Setup env file
         run: |
+          mkdir -p lib/config/env
           echo "${{ secrets.ENV_FILE }}" | base64 --decode > lib/config/env/.env
       
       - name: Set up Flutter
