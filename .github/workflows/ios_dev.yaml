@@ -38,5 +38,5 @@ jobs:
           pod install --repo-update
           cd ..
 
-      - name: Build IPA
+      - name: Build IOS
         run: flutter build ios --release --build-name=1.0.0 --build-number=1 --no-codesign
