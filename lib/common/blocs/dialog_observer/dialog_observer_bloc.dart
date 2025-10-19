@@ -7,7 +7,7 @@ part 'dialog_observer_bloc.freezed.dart';
 
 class DialogObserverBloc
     extends Bloc<DialogObserverEvent, DialogObserverState> {
-  DialogObserverBloc() : super(_DialogObserverState()) {
+  DialogObserverBloc() : super(const _DialogObserverState()) {
     on<OpenTheDialog>(_onOpenTheDialog);
     on<CloseTheDialog>(_onCloseTheDialog);
   }

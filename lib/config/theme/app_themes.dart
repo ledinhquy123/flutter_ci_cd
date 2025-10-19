@@ -97,10 +97,10 @@ class AppThemes {
     }),
 
     // Today background
-    todayBackgroundColor: WidgetStatePropertyAll(const Color(0xFFFBB355)),
+    todayBackgroundColor: const WidgetStatePropertyAll(Color(0xFFFBB355)),
 
     // Today foreground
-    todayForegroundColor: WidgetStatePropertyAll(Colors.white),
+    todayForegroundColor: const WidgetStatePropertyAll(Colors.white),
     todayBorder: BorderSide.none,
 
     // Year foreground
@@ -147,10 +147,10 @@ class AppThemes {
   static final ElevatedButtonThemeData _elevatedButtonThemeData =
       ElevatedButtonThemeData(
         style: ButtonStyle(
-          shadowColor: WidgetStatePropertyAll(Colors.transparent),
-          backgroundColor: WidgetStatePropertyAll(const Color(0xFFFBB355)),
-          foregroundColor: WidgetStatePropertyAll(Colors.white),
-          elevation: WidgetStatePropertyAll(0.0),
+          shadowColor: const WidgetStatePropertyAll(Colors.transparent),
+          backgroundColor: const WidgetStatePropertyAll(Color(0xFFFBB355)),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          elevation: const WidgetStatePropertyAll(0.0),
           padding: WidgetStatePropertyAll(
             EdgeInsets.symmetric(horizontal: 20.w, vertical: 22.h),
           ),
@@ -193,7 +193,7 @@ class AppThemes {
     scaffoldBackgroundColor: Colors.white,
 
     // Primary and secondary color
-    colorScheme: ColorScheme.light(primary: const Color(0xFFFBB355)),
+    colorScheme: const ColorScheme.light(primary: Color(0xFFFBB355)),
 
     // App theme
     appBarTheme: _appBarTheme,

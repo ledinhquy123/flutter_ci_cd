@@ -5,10 +5,10 @@ name: Flutter - Android Build
 on:
   pull_request:
     branches:
-      - main-1
+      - main
   push:
     branches:
-      - main-1
+      - main
 
 #3
 jobs:
@@ -39,4 +39,10 @@ jobs:
         run: flutter pub get
 
       - name: Build APK
-        run: flutter build apk --release --build-name=1.0.0 --build-number=1
+        run: flutter build apk --release
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-cd-app
+          path: build/app/outputs/flutter-apk/app-release.apk
